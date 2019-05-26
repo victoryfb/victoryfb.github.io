@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="MCTS,">
 
 
 
@@ -79,13 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Standing On the Shoulder Of Giants">
-<meta property="og:url" content="https://victoryfb.github.io/index.html">
+<meta name="description" content="What is MCTS?Monte Carlo Tree Search (MCTS) is a method for making optimal decisions in artificial intelligence (AI) problems, typically move planning in combinatorial games. It combines the generalit">
+<meta name="keywords" content="MCTS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Monte Carlo Tree Search">
+<meta property="og:url" content="https://victoryfb.github.io/2019/05/25/1/index.html">
 <meta property="og:site_name" content="Standing On the Shoulder Of Giants">
+<meta property="og:description" content="What is MCTS?Monte Carlo Tree Search (MCTS) is a method for making optimal decisions in artificial intelligence (AI) problems, typically move planning in combinatorial games. It combines the generalit">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://mcts.ai/about/mcts-algorithm-1a.png">
+<meta property="og:image" content="http://mcts.ai/mcts-tree-4.png">
+<meta property="og:updated_time" content="2019-05-26T01:04:04.893Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Standing On the Shoulder Of Giants">
+<meta name="twitter:title" content="Monte Carlo Tree Search">
+<meta name="twitter:description" content="What is MCTS?Monte Carlo Tree Search (MCTS) is a method for making optimal decisions in artificial intelligence (AI) problems, typically move planning in combinatorial games. It combines the generalit">
+<meta name="twitter:image" content="http://mcts.ai/about/mcts-algorithm-1a.png">
 
 
 
@@ -115,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://victoryfb.github.io/">
+  <link rel="canonical" href="https://victoryfb.github.io/2019/05/25/1/">
 
 
 
 
 
-  <title>Standing On the Shoulder Of Giants</title>
+  <title>Monte Carlo Tree Search | Standing On the Shoulder Of Giants</title>
   
 
 
@@ -140,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +241,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +273,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/25/1/" itemprop="url">Monte Carlo Tree Search</a></h2>
+          <h2 class="post-title" itemprop="name headline">Monte Carlo Tree Search</h2>
         
 
         <div class="post-meta">
@@ -340,9 +345,7 @@
       
 
       
-        
-          
-            <h2 id="What-is-MCTS"><a href="#What-is-MCTS" class="headerlink" title="What is MCTS?"></a>What is MCTS?</h2><p>Monte Carlo Tree Search (MCTS) is a method for making optimal decisions in artificial intelligence (AI) problems, typically move planning in combinatorial games. It combines the generality of random simulation with the precision of tree search.</p>
+        <h2 id="What-is-MCTS"><a href="#What-is-MCTS" class="headerlink" title="What is MCTS?"></a>What is MCTS?</h2><p>Monte Carlo Tree Search (MCTS) is a method for making optimal decisions in artificial intelligence (AI) problems, typically move planning in combinatorial games. It combines the generality of random simulation with the precision of tree search.</p>
 <p>Research interest in MCTS has risen sharply due to its spectacular success with computer Go and potential application to a number of other difficult problems. Its application extends beyond games, and MCTS can theoretically be applied to any domain that can be described in terms of {state, action} pairs and simulation used to forecast outcomes.</p>
 <hr>
 <h2 id="Basic-Algorithm"><a href="#Basic-Algorithm" class="headerlink" title="Basic Algorithm"></a>Basic Algorithm</h2><p>The basic MCTS algorithm is simple: a search tree is built, node by node, according to the outcomes of simulated playouts. The process can be broken down into the following steps.</p>
@@ -371,8 +374,6 @@
 <p>Domain knowledge can yield significant improvements, at the expense of speed and loss of generality.</p>
 <p><strong>Domain Independent</strong><br>Domain independent enhancements apply to all problem domains. These are typically applied in the tree (e.g. AMAF) although again some apply to the simulations (e.g. prefer winning moves during playouts). Domain independent enhancements do not tie the implementation to a particular domain, maintaining generality, and are hence the focus of most current work in the area.</p>
 
-          
-        
       
     </div>
     
@@ -387,14 +388,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/MCTS/" rel="tag"># MCTS</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -404,10 +411,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -415,6 +423,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -435,8 +447,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -496,6 +517,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-MCTS"><span class="nav-number">1.</span> <span class="nav-text">What is MCTS?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Basic Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-Selection"><span class="nav-number">3.</span> <span class="nav-text">Node Selection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Benefits"><span class="nav-number">4.</span> <span class="nav-text">Benefits</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Drawbacks"><span class="nav-number">5.</span> <span class="nav-text">Drawbacks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Improvements"><span class="nav-number">6.</span> <span class="nav-text">Improvements</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -630,6 +667,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

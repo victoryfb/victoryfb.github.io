@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/05/25/hello-world/</loc>
+    <loc>https://victoryfb.github.io/2019/05/25/1/</loc>
     
-    <lastmod>2019-05-25T23:42:33.025Z</lastmod>
+    <lastmod>2019-05-26T01:04:04.893Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://victoryfb.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-05-26T00:45:07.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://victoryfb.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-05-26T00:44:23.158Z</lastmod>
     
   </url>
   
