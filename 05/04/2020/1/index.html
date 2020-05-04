@@ -335,12 +335,12 @@
         <p>First, install necessary tools with the command:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install curl gnupg2 ca-certificates lsb-release</span><br></pre></td></tr></table></figure>
 <p>There is an official NGINX repository where the latest version can be found. To add this repository, create a new <code>.list</code> file with the command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx"</span> | tee /etc/apt/sources.list.d/nginx.list</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx&quot;</span> | tee /etc/apt/sources.list.d/nginx.list</span><br></pre></td></tr></table></figure>
 <p>Before installation, the NGINX public key must be added. To do this, issue the following commands:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /tmp/ &amp;&amp; curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add -</span><br></pre></td></tr></table></figure>
 <p>Once you have the key installed, update apt with the command:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
-<p>Now it’s time to install the latest version of NGINX. Do so with the command:</p>
+<p>Now it&apos;s time to install the latest version of NGINX. Do so with the command:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install nginx</span><br></pre></td></tr></table></figure>
 <p>Link your config file with the command:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /var/www/website/config/my_nginx.conf /etc/nginx/conf.d/</span><br></pre></td></tr></table></figure>
