@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Install the Latest Nginx on Ubuntu]]></title>
+    <title><![CDATA[[object Object]]]></title>
     <url>%2F2020%2F05%2F04%2F1%2F</url>
     <content type="text"><![CDATA[Before starting install the latest Nginx, you should install necessary tools. 1sudo apt-get install curl gnupg2 ca-certificates lsb-release There is an official NGINX repository where the latest version can be found. To add this repository, create a new .list file with the command: 12echo "deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" |tee /etc/apt/sources.list.d/nginx.list Before installation, the NGINX public key must be added. To do this, issue thefollowing commands: 1cd /tmp/ &amp;&amp; curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add - Once you have the key installed, update apt with the command: 1apt-get update Now it’s time to install the latest version of NGINX. Do so with the command: 1apt-get install nginx Link your config file. 1ln -s /var/www/website/config/my_nginx.conf /etc/nginx/conf.d/]]></content>
-      <categories>
-        <category>Ubuntu</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[Monte Carlo Tree Search]]></title>
