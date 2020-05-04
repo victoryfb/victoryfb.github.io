@@ -334,9 +334,9 @@
           
             <p>First, install necessary tools with the command:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install curl gnupg2 ca-certificates lsb-release</span><br></pre></td></tr></table></figure>
-<p>There is an official NGINX repository where the latest version can be found. To<br>add this repository, create a new <code>.list</code> file with the command:</p>
+<p>There is an official NGINX repository where the latest version can be found. To add this repository, create a new <code>.list</code> file with the command:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx"</span> | tee /etc/apt/sources.list.d/nginx.list</span><br></pre></td></tr></table></figure>
-<p>Before installation, the NGINX public key must be added. To do this, issue the<br>following commands:</p>
+<p>Before installation, the NGINX public key must be added. To do this, issue the following commands:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /tmp/ &amp;&amp; curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add -</span><br></pre></td></tr></table></figure>
 <p>Once you have the key installed, update apt with the command:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
